@@ -10,12 +10,17 @@ body{
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;   
-    background-color: #262525;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
 }
 .header{
    
     color: #f8f0f0;
-     background:linear-gradient(180deg, #FC830A 0%, rgba(177, 73, 4, 0.856) 100%);
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
      
 }
 .container{
@@ -76,8 +81,8 @@ height: 800px;
 .imagem_inicio{
     
     height: 400px;
-    box-shadow: 8px 10px #fc830abe;
-    border: 3.5px rgba(177, 73, 4, 0.856) inset;
+    box-shadow: 8px 10px #f19f33d8 ;
+    border: 3.5px  inset #fc830a;
 }
 
 .texto_incio{
