@@ -31,14 +31,26 @@ body{
     display: flex;
     width: 25vw;
     height: 70vh;
-    background:linear-gradient(180deg, #FC830A 0%, rgba(177, 73, 4, 0.856) 100%);
+    background: linear-gradient(to right, #bdc3c7a4, #2c3e50a6);
     border-radius: 12px;
-    box-shadow: 8px 8px rgba(83, 80, 80, 0.89);
+    box-shadow: 8px 8px rgba(236, 132, 34, 0.89);
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 10%;
+    position: relative;
 }
+
+
+#meu_video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 
 h1{
     color: #f2f2f2;
