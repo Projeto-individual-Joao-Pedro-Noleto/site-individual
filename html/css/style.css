@@ -10,30 +10,43 @@ body{
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;   
-    background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343, #000000);  
-    background: linear-gradient(to right, #434343, #000000); 
-}
-.header{
-   
-    color: #f8f0f0;
-    background: #fc4a1a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, #000000, #434343);
     
-     
-}
-.container{
-    display: flex;
-    width: 100%;
-    margin: auto;
-    align-items: center;
 }
 
-.container h1{
+/* .header{
+    position: fixed;
+    color: #f8f0f0;
+  
+   background: linear-gradient(to right, #fdc830, #f37335);
+     
+} */
+#header{
+    width: 100vw;
+    height: 80px;
+    color: #f8f0f0;
+   background: linear-gradient(to right, #fdc830, #f37335);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    position: fixed;
+}
+
+#header ul :hover{
+    color:#108dc7 ;
+    
+}
+
+#header h1{
+    
     margin-left: 80px;
     justify-content: flex-start;
 }
+
+#header h1{
+    color: #2b2c2d;
+}
+
 
 .img_bola_menu{
     display: flex;
@@ -45,17 +58,16 @@ body{
 .navbar{
     display: flex;
     list-style: none;
-    width: 600px;
-    justify-content: space-evenly;
+    width: 40%;
+    justify-content: space-around;
     align-items: center ;
-    
     font-weight: bold;
-    margin-left: 35%;
+    margin-left: 24% ;
 }
 
 
 .navbar a{
-    color: #f8f0f0;
+    color: #2b2c2d;
     text-decoration: none;
     font-size: 20px;
 } 
@@ -67,31 +79,37 @@ Inicio
 */
 
 .banner{
-width: 100%;
-height: 800px;
-}
-.container_inicio{
     width: 100%;
-    height: 500px;
+    height: 100vh;
+    display: flex;
+    
+ 
+}
+/* .container_inicio{
+    width: 60%;
+    height: 70%;
     display: flex;
     margin-left: 4%;
     margin-top: 3%;  
-}
-
-.imagem_inicio{
     
+}
+ */
+.imagem_inicio{
+    margin-left: 4%;
+    margin-top: 8.5%;  
     height: 400px;
-    box-shadow: 8px 10px #f19f33d8 ;
-    border: 3.5px  inset #fc830a;
+    box-shadow: 8px 10px #8f8b86d8 ;
+    border: 3.5px  inset #2e2d2d;
+    border-radius: 8px;
+    
 }
 
 .texto_incio{
     color: white;
-    width: 400px;   
-    margin-bottom: 100px;
-    margin-left:200px ;
-    margin-top: 100px;
-    font-size: 20px;
+    width: 20%;   
+    margin: auto;
+    margin-bottom: 30%;
+    font-size: 1.3em;
     
 }
 
@@ -101,7 +119,7 @@ height: 800px;
 
 .sobre_nos{
     height: 100vh;
-    background-color: #262525;
+    background: linear-gradient(to left, #000000, #434343);
     
 }
 
@@ -113,8 +131,9 @@ height: 800px;
 
 .container_sobre{
     margin: 5% 10% ;
-    background-color: #fc830a;
+    background: linear-gradient(to right, #108dc7, #ef8e38);
     width: 80%;
     height: 80%;
     border-radius: 8px;
 }
+
