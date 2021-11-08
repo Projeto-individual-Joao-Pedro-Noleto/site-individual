@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../html/css/cadastro.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="meu_video">
+        <source src="imgs/animação_Trim.mp4" type="video/mp4">
+    </video>
+    <div class="div_cadastro">
+        <form onsubmit="cadastrar()" method="post" id="form_cadastro"></form>
+        <div class="div_form">
+            <h1>Cadastro</h1>
+            <div class="div_inputs_um">
+                <input name="nome" type="text" id="input_usuario" placeholder="Nome Completo">
+                    <span>Zona que reside: <select name="zona" id="regiao">
+                        <option value="">-</option>
+                        <option value="ZS">Zona Sul</option>
+                        <option value="ZN">Zona Norte</option>
+                        <option value="ZL">Zona Leste</option>
+                        <option value="ZO">Zona Oeste</option>
+                        <option value="Centro">Centro</option>
+                    </select></span>
+            </div>
+            <div class="div_inputs_dois">
+                <input name="email" type="text" id="input_usuario" placeholder="Email">
+                <input name="telefone" type="text" id="input_usuario" placeholder="Telefone">
+                <input name="senha" type="password" id="input_senha" placeholder="Senha">
+              
+            </div>
+            <button class="btn_cadastro" type="submit">Cadastrar</button>
+        </div>
+    
+
+    </div>
+    </form>
+    </div>
+</body>
+</html>
+
+<script>
+
+function cadastrar() {
+   
+
+    var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
+
+    var nome = formulario.get("nome");
+    var email = formulario.get("email");
+    var senha = formulario.get("senha");
+    var zona = formulario.get("zona");
+    var telefone = formulario.get("telefone")
+
+    // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+    if (nome == "" || email == "" || senha == "" ) {
+
+        window.alert("Preencha todos os campos para prosseguir!");
+        if (nome == "") {
+            console.log('nome está em branco')
+        }
+        if (email == "") {
+            console.log('email está em branco')
+        }
+        if (senha == "") {
+            console.log('senha está em branco')
+        }
+        return false;
+    }
+
+    if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+        window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+      
+        return false;
+    }
+
+
+    fetch("/usuarios/cadastrar", {
+        method: "POST",
+        body: formulario
+    }).then(function (resposta) {
+
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+            window.alert("Cadastro realizado com sucesso!");
+            window.location = "login.html";
+  
+           
+        } else {
+            throw ("Houve um erro ao tentar realizar o cadastro!");
+        }
+    }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+       
+    });
+
+    return false;
+}
+
+</script>
