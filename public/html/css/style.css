@@ -137,9 +137,26 @@ Inicio
 
 .container_sobre{
     margin: 5% 10% ;
-    background: linear-gradient(to right, #108dc7, #ef8e38);
+    background: linear-gradient(to left, #108dc7, #ef8e38);
     width: 80%;
     height: 80%;
     border-radius: 8px;
 }
 
+
+.caixa_texto_sobre_mim{
+    font-size: 20px;
+    color: #2b2c2d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5.5%;
+    font-weight: 400;
+
+}
+
+#p_sobre_mim{
+    width: 35%;
+    font-style: italic;
+}
