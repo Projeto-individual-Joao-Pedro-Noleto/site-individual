@@ -75,6 +75,7 @@ body{
     display: flex;
     align-items: center;
     margin-left: 5%;
+    justify-content: space-around;
 }
 
 .container_quadra1{
@@ -110,5 +111,8 @@ button{
     justify-content: space-around;
     align-items: center;
     flex-direction:column ;
-    
+}
+
+#trinta{
+   width: 350px; 
 }
