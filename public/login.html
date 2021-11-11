@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/main.js"></script>    
+</head>
+<body>
+    <video autoplay muted loop id="meu_video">
+        <source src="imgs/animação_Trim.mp4" type="video/mp4">
+    </video>
+    <div class="div_login">
+        <form method="post" id="login"></form>
+            <div class="div_form">
+                <h1>Login</h1>
+                <input type="text" id="input_usuario" placeholder="Usuário" >
+                <input type="password" id="input_senha" placeholder="Senha">
+                <button onclick = validacao() class="btn_login" type="submit" onclick="validar()">Entrar</button>
+                <span>não tem login ? <a href="cadastro.html" target="blank">Cadastre-se </a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

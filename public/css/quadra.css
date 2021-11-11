@@ -11,6 +11,7 @@ body{
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;   
     background: linear-gradient(to left, #000000, #434343);
+    overflow-y: hidden;
     
 }
 
@@ -116,3 +117,4 @@ button{
 #trinta{
    width: 350px; 
 }
+

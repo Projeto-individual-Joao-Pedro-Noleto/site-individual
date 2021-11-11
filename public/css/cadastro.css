@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+*{
+    font-family:'Josefin Sans', sans-serif;
+  }
+  
+
+body{
+
+  
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;    
+   
+
+
+
+}
+
+.div_cadastro{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.div_form{
+    display: flex;
+    width:50vw;
+    height: 70vh;
+    background: linear-gradient(to right, #bdc3c7a4, #2c3e50a6);
+    border-radius: 12px;
+    box-shadow: 8px 8px rgba(236, 132, 34, 0.89);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    position: relative;
+}
+
+
+#meu_video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+h1{
+    color: #f2f2f2;
+    border-bottom: 2px inset #252525;
+    font-size: 58px;
+}
+
+
+input {
+    border-style: none;
+    width: 200px;
+    height: 30px;
+    display: flex; 
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f2f2f200;
+    border-bottom: #252525 2px inset;
+    outline: 0;
+  }
+
+  input::placeholder{
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f2f2f2;
+    font-size: 20px ;
+}
+
+.btn_cadastro{
+    margin-top: 40px;
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 5px 4px rgba(83, 80, 80, 0.89);
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #252525;
+    text-align: center;
+    background-color: #b8aeae;
+}
+
+#regiao{ /* Select */
+    
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    border-style: none;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #252525;
+    text-align: center;
+    background-color:#ccc8c8;
+    align-self: center;
+}
+
+span{
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.div_inputs_um{
+    display: flex;
+    flex-direction: row;
+    margin :40px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.div_inputs_dois{
+    display: flex;
+    flex-direction: row;
+    margin :40px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
