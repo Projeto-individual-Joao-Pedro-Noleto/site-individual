@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,62 @@
     <title>Quadras</title>
     <link rel="stylesheet" href="css/quadra.css">
     <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
+    <script src="js/main.js"></script>
 </head>
+
 <body>
     <div id="header">
-        <img class="img_bola_menu" src="imgs/icone_bola.png"> <h1>Bandeja</h1>
+        <img class="img_bola_menu" src="imgs/icone_bola.png">
+        <h1>Bandeja</h1>
         <ul class="navbar">
             <li class="agora">
-               <a href="" target="blank">Quadras</a>
+                <a href="" target="blank">Quadras</a>
             </li>
-                <li>
-                    <a target="blank">| </a>
-                </li>
-            <li>   
-                <a href="" target="blank">Cadastrar Quadra</a>
-            </li>   
             <li>
                 <a target="blank">| </a>
             </li>
-        <li>   
-            <a href="index.html" target="blank">Tela de inicio</a>
-        </li>   
+            <li>
+                <a href="" target="blank">Cadastrar Quadra</a>
+            </li>
+            <li>
+                <a target="blank">| </a>
+            </li>
+            <li>
+                <a href="index.html" target="blank">Tela de inicio</a>
+            </li>
         </ul>
     </div>
 
 
     <div class="div_quadras">
         <div class="container_quadra1">
-            <img id="kaleman" src="https://www.cbb.com.br/wp-content/uploads/Kaleman-2-_1626371910.jpeg"> 
-                <button class="btn_ver_quadra" >
-                    Ver informações
-                </button>
-        </div>
+            <div class="div_kaleman" class="div_imagem">
+                <img  id="img_kaleman" src="https://www.cbb.com.br/wp-content/uploads/Kaleman-2-_1626371910.jpeg">
 
-        <div class="container_quadra2">
-            <img id="trinta" src="imgs/31.JPG" >
-                <button class="btn_ver_quadra">
+                <button onmouseenter="mostrar_texto()" onmouseleave="ocultar_texto()" class="btn_ver_quadra">
                     Ver informações
                 </button>
+            </div>
+            <p id="p" class="p_descricao">
+                Rachao toda terça e quinta as 19 hrs <br><br>
+                Zona Sul <br>
+                R. Salvador Macarone - Jardim Paineiras, Diadema - SP, 09932-280 <br><br>
+                Jogos disputados e com um nivel tecnico amador pra cima <br>
+                Lugar com muitos jogadores e divertido <br>
+            </p>
+        </div>
+          
+        <div class="container_quadra2">
+            <img id="trinta" src="imgs/31.JPG">
+            <button class="btn_ver_quadra">
+                Ver informações
+            </button>
         </div>
     </div>
+       
+
+       
+    
 </body>
+
 </html>
