@@ -15,12 +15,12 @@
         <source src="imgs/animação_Trim.mp4" type="video/mp4">
     </video>
     <div class="div_login">
-        <form method="post" id="login"></form>
+        <form form id="form_login" method="post" onsubmit="return entrar()"></form>
             <div class="div_form">
                 <h1>Login</h1>
-                <input type="text" id="input_usuario" placeholder="Usuário" >
-                <input type="password" id="input_senha" placeholder="Senha">
-                <button onclick = validacao() class="btn_login" type="submit" onclick="validar()">Entrar</button>
+                <input type="text" name="email" id="input_usuario" placeholder="email" >
+                <input type="password" name="senha" id="input_senha" placeholder="Senha">
+                <button class="btn_login" type="submit" >Entrar</button>
                 <span>não tem login ? <a href="cadastro.html" target="blank">Cadastre-se </a></span>
             </div>
         </form>
@@ -28,3 +28,74 @@
 </body>
 </html>
 
+<script>
+
+    function limparFormulario() {
+        document.getElementById("form_login").reset();
+    }
+
+    function entrar() {
+        aguardar();
+
+        var formulario = new URLSearchParams(new FormData(document.getElementById("form_login")));
+
+        var email = formulario.get("email");
+        var senha = formulario.get("senha");
+
+        console.log("FORM LOGIN: ", email);
+        console.log("FORM SENHA: ", senha);
+
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+        if (email == "" || senha == "") {
+            window.alert("Preencha todos os campos para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/cards.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+</script>

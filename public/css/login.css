@@ -90,6 +90,7 @@ input {
     color: #252525;
     text-align: center;
     background-color: #b8aeae;
+    z-index: 2;
 }
 
 span{

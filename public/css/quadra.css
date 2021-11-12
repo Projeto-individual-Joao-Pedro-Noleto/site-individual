@@ -80,15 +80,17 @@ body{
 
 .container_quadra1{
     display: flex;
-    height: 82%;
-    width: 35%;
+    height: 82vh;
+    width: 35vw;
     border: 5px #f37335 outset;
     justify-content: space-around;
     align-items: center;
-    flex-direction:column ;
+    flex-direction:column;
+    border-style: solid;
     border-radius: 8px;
     z-index: 2;
     margin-top: 5%;
+    box-shadow: 8px 10px #fdc630ad ;
 }
 
 .div_kaleman{
@@ -107,12 +109,17 @@ body{
 }
 
 
+.div_texto_info{
+    width: 100%;
+    
+}
+
 .p_descricao{
     width:100% ;
     height: 15%;
     color: #f8f0f0;
     text-align: center;
- 
+    
 
 }
 
@@ -129,8 +136,8 @@ button{
 
 .container_quadra2{
     display: flex;
-    height: 82%;
-    width: 35%;
+    height: 82vh;
+    width: 35vw;
     border: 5px #f37335 outset;
     justify-content: space-around;
     align-items: center;
@@ -138,6 +145,7 @@ button{
     border-radius: 8px;
     z-index: 2;
     margin-top: 5%;
+    box-shadow: 8px 10px #fdc630ad ;
 }
 
 
