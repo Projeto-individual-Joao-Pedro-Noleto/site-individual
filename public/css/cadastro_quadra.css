@@ -75,6 +75,11 @@ input {
     outline: 0;
   }
 
+  #input_senha{
+    width: 250px;
+    
+  }
+
   input::placeholder{
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
@@ -135,3 +140,5 @@ span{
     justify-content: space-around;
     align-items: center;
 }
+
+

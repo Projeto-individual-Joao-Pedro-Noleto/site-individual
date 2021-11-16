@@ -6,18 +6,37 @@
   }
   
 
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #c2d2e4d8;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    height: 25px;
+    background-color: #108dc7;
+}
+
+
 body{
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;   
     background: linear-gradient(to left, #000000, #434343);
-    width: 100vw;
+    width: 200vw;
+    height: 110vh;
+   
     
 }
 
+
+
 #header{
     width: 100vw;
-    height: 80px;
+    height: 10.2%;
     color: #f8f0f0;
    background: linear-gradient(to right, #fdc830, #f37335);
     display: flex;
@@ -45,7 +64,8 @@ body{
 .img_bola_menu{
     display: flex;
     justify-content: flex-start;
-    width: 100px;
+    height: 90%;
+    margin-left: 1.2%;
     
 }
 
@@ -70,8 +90,8 @@ body{
 /*  Parte quadras */
 
 .div_quadras{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(to left, #000000, #434343);
     display: flex;
     align-items: center;
@@ -80,8 +100,8 @@ body{
 
 .container_quadra1{
     display: flex;
-    height: 82vh;
-    width: 35vw;
+    height: 75%;
+    width: 18%;
     border: 5px #f37335 outset;
     justify-content: space-around;
     align-items: center;
@@ -90,7 +110,11 @@ body{
     border-radius: 8px;
     z-index: 2;
     margin-top: 5%;
-    box-shadow: 8px 10px #fdc630ad ;
+    box-shadow: rgba(240, 101, 46, 0.4)
+     5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+     rgba(240, 101, 46, 0.2) 15px 15px, 
+     rgba(240, 101, 46, 0.1) 20px 20px, 
+     rgba(240, 101, 46, 0.05) 25px 25px;
 }
 
 .div_kaleman{
@@ -103,10 +127,6 @@ body{
      
 }
 
-#img_kaleman{
-    width: 100%;
-    border-radius: 8px;
-}
 
 
 .div_texto_info{
@@ -116,11 +136,9 @@ body{
 
 .p_descricao{
     width:100% ;
-    height: 15%;
+    height: 100%;
     color: #f8f0f0;
     text-align: center;
-    
-
 }
 
 button{
@@ -136,8 +154,8 @@ button{
 
 .container_quadra2{
     display: flex;
-    height: 82vh;
-    width: 35vw;
+    height: 75%;
+    width: 18%;
     border: 5px #f37335 outset;
     justify-content: space-around;
     align-items: center;
@@ -145,13 +163,57 @@ button{
     border-radius: 8px;
     z-index: 2;
     margin-top: 5%;
-    box-shadow: 8px 10px #fdc630ad ;
+    box-shadow: rgba(240, 101, 46, 0.4)
+    5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+    rgba(240, 101, 46, 0.2) 15px 15px, 
+    rgba(240, 101, 46, 0.1) 20px 20px, 
+    rgba(240, 101, 46, 0.05) 25px 25px;
+
 }
 
 
+.container_quadra3{
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column ;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4)
+     5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+     rgba(240, 101, 46, 0.2) 15px 15px, 
+     rgba(240, 101, 46, 0.1) 20px 20px, 
+     rgba(240, 101, 46, 0.05) 25px 25px;
+}
+
+
+.container_quadra4{
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column ;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    /*-webkit-box-shadow: -1px 6px 20px 22px rgba(233, 157, 58, 0.7);
+    -moz-box-shadow: -1px 6px 20px 22px rgba(166,166,166,0.7);
+    box-shadow: -1px 6px 20px 22px rgba(166,166,166,0.7);*/
+    box-shadow: rgba(240, 101, 46, 0.4)
+    5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+    rgba(240, 101, 46, 0.2) 15px 15px, 
+    rgba(240, 101, 46, 0.1) 20px 20px, 
+    rgba(240, 101, 46, 0.05) 25px 25px;
+}
 .div_trinta{
     width: 350px;
-    height: 85%;
+    height: 75%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -159,7 +221,26 @@ button{
      
 }
 #trinta{
-    width: 100%;
-    border-radius: 8px;
+    width: 90%;
+    height: 65%;
+    border-radius: 25px;
 }
 
+#paco_diadema{
+    width: 90%;
+    height: 65%;
+    border-radius: 25px;
+}
+
+#ibira{
+    width: 90%;
+    height: 65%;
+    border-radius: 25px;
+}
+
+
+#img_kaleman{
+    width: 90%;
+    height: 65%;
+    border-radius: 25px;
+}
