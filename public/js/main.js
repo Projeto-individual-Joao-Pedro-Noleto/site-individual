@@ -5,7 +5,9 @@ function mostrar_texto(){
 
   var texto = p.value;
 
- p.style.opacity = "1" 
+ p.style.opacity = "1";
+
+
 }
 
 function ocultar_texto(){
@@ -56,7 +58,34 @@ function mostrar_texto_4(){
 
 function ocultar_texto_4(){
 
-  var texto = p_2.value;
+  var texto = p_4.value;
 
  p_4.style.opacity = "0" 
 }
+
+
+
+function mostrar_texto_5(){
+
+  var texto = p_5.value;
+
+ p_5.style.opacity = "1" 
+}
+
+function ocultar_texto_5(){
+
+  var texto = p_5.value;
+
+ p_5.style.opacity = "0" 
+}
+
+/* quadras */
+
+
+
+
+function zona_centro_quadras(){
+
+ibira_centro.style.display = "none";
+}
+
