@@ -31,14 +31,21 @@
             <li>
                 <a href="index.html" target="blank">Tela de inicio</a>
             </li>
+            <li>
+                <a target="blank">| </a>
+              </li>
+            <li>
+                <a href="quadras_zona.html" target="blank">Escolha a Zona</a>
+              </li>
+              
         </ul>
     </div>
 
-
-    <div class="div_quadras">
+        <!-- zona sul-->
+    <div id="kaleman_sz" class="div_quadras">
         <div class="container_quadra1">
             <div class="div_kaleman" class="div_imagem">
-                <img  id="img_kaleman" src="https://www.cbb.com.br/wp-content/uploads/Kaleman-2-_1626371910.jpeg">
+                <img  class="img_in_container" id="img_kaleman" src="https://www.cbb.com.br/wp-content/uploads/Kaleman-2-_1626371910.jpeg">
 
                 <button onmouseenter="mostrar_texto()" onmouseleave="ocultar_texto()" class="btn_ver_quadra">
                     Ver informações
@@ -55,9 +62,9 @@
             </div>
         </div>
           
-        <div class="container_quadra2">
+        <div id="trinta_sz" class="container_quadra2">
             <div class="div_trinta" class="div_imagem">
-            <img id="trinta" src="imgs/31.JPG">
+            <img  class="img_in_container" id="trinta" src="imgs/31.JPG">
             <button onmouseenter="mostrar_texto_2()" onmouseleave="ocultar_texto_2()" class="btn_ver_quadra">
                 Ver informações
             </button>
@@ -73,9 +80,9 @@
         </div>
         </div>
 
-        <div class="container_quadra3">
+        <div id="paco_zs" class="container_quadra3">
             <div class="div_trinta" class="div_imagem">
-            <img id="paco_diadema" src="imgs/paco_diadema.jpg">
+            <img class="img_in_container" id="paco_diadema" src="imgs/paco_diadema.jpg">
             <button onmouseenter="mostrar_texto_3()" onmouseleave="ocultar_texto_3()" class="btn_ver_quadra">
                 Ver informações
             </button>
@@ -91,9 +98,15 @@
         </div>
         </div>
 
-        <div class="container_quadra4">
+
+
+
+
+        <!-- centro-->
+
+        <div  id="ibira_centro" class="container_quadra4">
             <div class="div_trinta" class="div_imagem">
-            <img id="ibira" src="imgs/ibira.jpg">
+            <img class="img_in_container" id="ibira" src="imgs/ibira.jpg">
             <button onmouseenter="mostrar_texto_4()" onmouseleave="ocultar_texto_4()" class="btn_ver_quadra">
                 Ver informações
             </button>
@@ -109,6 +122,24 @@
         </div>
         </div>
     </div>
+
+    <div style="display: none;" id="zilda_natel" class="container_quadra5">
+        <div class="div_trinta" class="div_imagem">
+        <img class="img_in_container" id="ibira" src="imgs/zilda-natel-centro.jpg">
+        <button onmouseenter="mostrar_texto_5()" onmouseleave="ocultar_texto_5()" class="btn_ver_quadra">
+            Ver informações
+        </button>
+        </div>
+        <div class="div_texto_info"> 
+        <p style="opacity: 0;" id="p_5" class="p_descricao">
+            É muito frequentado a noite. Seu horário de funcionamento é diário, das 9h às 21 horas. <br>
+            O melhor? O parque também possui vestiário, além de emprestar bolas de basquete<br>
+            Av. Dr. Arnaldo, 120 – Sumaré <br><br>
+            
+        </p>
+    </div>
+    </div>
+</div>
        
 
        
