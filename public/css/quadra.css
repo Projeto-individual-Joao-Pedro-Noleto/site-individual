@@ -7,8 +7,8 @@
   
 
   ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
 }
 
 ::-webkit-scrollbar-track-piece  {
@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-    height: 25px;
+    height: 20px;
     background-color: #108dc7;
 }
 
@@ -25,17 +25,17 @@ body{
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;   
-    background: linear-gradient(to left, #000000, #434343);
+    background-color:#434343;
     width: 200vw;
     height: 110vh;
-   
+   position: absolute
     
 }
 
 
 
 #header{
-    width: 100vw;
+    width: 100%;
     height: 10.2%;
     color: #f8f0f0;
    background: linear-gradient(to right, #fdc830, #f37335);
@@ -43,6 +43,7 @@ body{
     margin: auto;
     align-items: center;
     position: fixed;
+    z-index: 999;
 }
 
 #header ul :hover{
@@ -76,7 +77,7 @@ body{
     justify-content: space-around;
     align-items: center ;
     font-weight: bold;
-    margin-left: 24% ;
+    margin-left: 19% ;
 }
 
 
@@ -92,7 +93,7 @@ body{
 .div_quadras{
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, #000000, #434343);
+    background: #434343;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -124,7 +125,7 @@ body{
 .div_texto_info{
     width: 100%;
     height: 28%;
-    
+    padding-bottom: 9px;
     
 }
 
@@ -133,7 +134,8 @@ body{
     height: 100%;
     color: #f8f0f0;
     text-align: center;
-    
+    transition: 0.5s linear;
+   
    
 }
 
@@ -154,6 +156,15 @@ button:hover{
     background-color: #108dc796;
     
 }
+
+ /*  Parte card quadras*/
+.titulos{
+    color:#fff;
+    font-size: 18px;
+    font-weight: inherit;
+    font-style: italic;
+}
+
 
 
 .container_quadra2{
@@ -213,6 +224,9 @@ button:hover{
      rgba(240, 101, 46, 0.05) 25px 25px;
 
 }
+
+
+
      .container_quadra5{
         display: flex;
         height: 75%;
@@ -257,4 +271,91 @@ button:hover{
     width: 90%;
     height: 50%;
     border-radius: 25px;
+}
+
+
+
+
+
+/*  Parte escolha da zona*/
+
+.h1_boas_vindas{
+color: #f8f0f0; 
+position: absolute;
+width: 50%;
+height: 40%;
+display: flex;
+align-items: center;
+
+}
+
+.container_btns{
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5.3%;
+}
+
+.btn_link{
+ 
+    width: 135px;
+    height: 45px;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(26, 25, 25, 0.35) 0px -50px 36px -28px inset;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #252525;
+    background-color: #f88436fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration:none ;
+
+
+}
+
+
+
+#btn_zs:hover{
+    width:150px;
+    height: 55px;
+    transition: 500ms linear;
+    background-color: #108dc7;
+    box-shadow: rgba(50, 50, 93, 0.384) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.39) 0px 18px 36px -18px inset;
+   
+}
+
+#btn_zo:hover{
+    width:150px;
+    height: 55px;
+    transition: 500ms linear;
+    background-color: #108dc7;
+    box-shadow: rgba(50, 50, 93, 0.384) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.39) 0px 18px 36px -18px inset;
+}
+#btn_zn:hover{
+    width:150px;
+    height: 55px;
+    transition: 500ms linear;
+    background-color: #108dc7;
+    box-shadow: rgba(50, 50, 93, 0.384) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.39) 0px 18px 36px -18px inset;
+}
+#btn_zl:hover{
+    width:150px;
+    height: 55px;
+    transition: 500ms linear;
+    background-color: #108dc7;
+    box-shadow: rgba(50, 50, 93, 0.384) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.39) 0px 18px 36px -18px inset;
+}
+
+#btn_centro:hover{
+    width:150px;
+    height: 55px;
+    transition: 500ms linear;
+    background-color: #108dc7;
+    box-shadow: rgba(50, 50, 93, 0.384) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.39) 0px 18px 36px -18px inset;
 }

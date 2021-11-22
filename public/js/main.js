@@ -86,6 +86,57 @@ function ocultar_texto_5(){
 
 function zona_centro_quadras(){
 
-ibira_centro.style.display = "none";
+
+
+  botoes.style.display = "none";
+
+  kaleman_zs.style.display = "flex";
+  trinta_zs.style.display = "flex";
+  paco_zs.style.display = "flex";
+  ibira_centro.style.display = "flex";
+}
+
+
+function zona_centro_quadras(){
+
+
+  h1_ola.style.display = "none";
+  botoes.style.display = "none";
+
+  kaleman_zs.style.display = "flex";
+  trinta_zs.style.display = "flex";
+  paco_zs.style.display = "flex";
+  ibira_centro.style.display = "flex";
+}
+
+
+
+function zona_centro_quadras(){
+
+
+
+  botoes.style.display = "none";
+
+  kaleman_zs.style.display = "flex";
+  trinta_zs.style.display = "flex";
+  paco_zs.style.display = "flex";
+  ibira_centro.style.display = "flex";
+}
+
+
+
+
+
+/* Pegar dados do banco */
+
+function validarsessao(){
+  var nome = sessionStorage.NOME_USUARIO;
+
+  if( nome != null ){
+    nome_usuario_h1.innerHTML = nome;
+  }
+  else{
+    window.location = "../login.html"
+  }
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 *{
@@ -25,7 +25,7 @@ body{
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;   
-    background: linear-gradient(to left, #000000, #434343);
+    background-color:  #434343;
     width: 100vw;
     height: 100vh;
    
@@ -101,12 +101,12 @@ body{
     height: 45px;
     border-radius: 8px;
     border-style: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    box-shadow: rgba(26, 25, 25, 0.35) 0px -50px 36px -28px inset;
     font-family:'Josefin Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #252525;
-    background-color: #f88436d5;
+    background-color: #f88436fa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,4 +155,4 @@ body{
     transition: 500ms linear;
     background-color: #108dc7;
     box-shadow: rgba(50, 50, 93, 0.384) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.39) 0px 18px 36px -18px inset;
-}
+} */

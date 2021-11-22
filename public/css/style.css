@@ -168,7 +168,7 @@ Inicio
 .caixa_texto_sobre_mim{
     font-size: 20px;
     color: #2b2c2d;
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -178,18 +178,41 @@ Inicio
 }
 
 #p_sobre_mim{
-    width: 35%;
+    width: 70%;
     font-style: italic;
+}
+
+
+.caixa_imagem_sobre_mim{
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#meu_video{
+  
+    width: 70%;
+    float: left;
+}
+
+
+#meu_video_2{
+  
+    width: 70%;
+    float: left;
 }
 
 
 
 
-
 .caixa_texto_sobre_nos{
-    font-size: 20px;
+    font-size: 28px;
     color: #2b2c2d;
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -199,13 +222,49 @@ Inicio
 }
 
 #p_sobre_nos{
-    width: 35%;
+    width: 70%;
     font-style: italic;
-}
-
-
-
-.caixa_imagem_sobre_mim{
     float: left;
-
 }
+
+
+
+.caixa_imagem_sobre_nos{
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img_sobre_nos{
+    width: 22%;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background: linear-gradient(to right, #485563, #29323c);
+    height: 90px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+  
