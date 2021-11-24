@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+*{
+    font-family:'Josefin Sans', sans-serif;
+  }
+  
+
+  ::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #C2D2E4;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #108dc7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;   
+    background: linear-gradient(to left, #000000, #434343);
+    
+}
+
+/* .header{
+    position: fixed;
+    color: #f8f0f0;
+  
+   background: linear-gradient(to right, #fdc830, #f37335);
+     
+} */
+#header{
+    width: 100vw;
+    height: 80px;
+    color: #f8f0f0;
+   background: linear-gradient(to right, #fdc830, #f37335);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    position: fixed;
+}
+
+#header ul :hover{
+    color:#108dc7 ;
+    
+}
+
+#header h1{
+    
+    margin-left: 80px;
+    justify-content: flex-start;
+   /* text-shadow: 2px 2px 0 #6d6a6a, 4px 4px 0 #968a8a;8*/
+}
+
+#header h1{
+    color: #2b2c2d;
+}
+
+
+.img_bola_menu{
+    display: flex;
+    justify-content: flex-start;
+    height: 95%;
+    margin-left: 1.2%;
+    
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center ;
+    font-weight: bold;
+    margin-left: 20% ;
+}
+
+
+.navbar a{
+    color: #2b2c2d;
+    text-decoration: none;
+    font-size: 20px;
+} 

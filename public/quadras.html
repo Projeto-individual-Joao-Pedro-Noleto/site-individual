@@ -2,19 +2,19 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quadras</title>
-    <link rel="stylesheet" href="css/quadra.css">
+    <link rel="stylesheet" href="css/quadra.css" />
 
-    <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon" />
     <script src="js/main.js"></script>
 </head>
 
 <body onload="validarsessao()">
     <div id="header">
-        <img class="img_bola_menu" src="imgs/basketball-court.png">
+        <img class="img_bola_menu" src="imgs/basketball-court.png" />
         <h1>Bandeja</h1>
         <ul class="navbar">
             <li class="agora">
@@ -38,15 +38,17 @@
             <li>
                 <a href="quadras.html" target="blank">Escolha a Zona</a>
             </li>
-
         </ul>
     </div>
-    <br>
-    <h1 id="h1_ola" class="h1_boas_vindas" > Olá  <span id="nome_usuario_h1">    </span></h1> 
+    <br />
+    <h1 id="h1_ola" class="h1_boas_vindas">
+        Olá <span id="nome_usuario_h1"> </span>
+    </h1>
 
     <div id="botoes" class="container_btns">
-      
-        <span onclick="zona_sul_quadras()" class="btn_link" id="btn_zs"> Sul </span>
+        <span onclick="zona_sul_quadras()" class="btn_link" id="btn_zs">
+            Sul
+        </span>
         <span onclick="zona_norte_quadras()" class="btn_link" id="btn_zn">Zona Norte</span>
         <span onclick="zona_leste_quadras()" class="btn_link" id="btn_zl">Zona Leste</span>
         <span onclick="zona_oeste_quadras()" class="btn_link" id="btn_zo">Zona Oeste</span>
@@ -55,113 +57,158 @@
 
     <!--                      ----------------------ZONA SUL--------------------------------------------------------------     -->
 
-    
-    <div style="display: none;" id="kaleman_zs" class="div_quadras">
-        <div class="container_quadra1">
+    <div class="div_quadras">
+        <div style="display: none" id="kaleman_zs" class="container_quadra1">
             <div class="div_kaleman" class="div_imagem">
                 <img class="img_in_container" id="img_kaleman"
-                    src="https://www.cbb.com.br/wp-content/uploads/Kaleman-2-_1626371910.jpeg">
-                        <span class="titulos"> Kaleman</span>
+                    src="https://www.cbb.com.br/wp-content/uploads/Kaleman-2-_1626371910.jpeg" />
+                <span class="titulos"> Kaleman</span>
                 <button onmouseenter="mostrar_texto()" onmouseleave="ocultar_texto()" class="btn_ver_quadra">
                     Ver informações
                 </button>
             </div>
             <div class="div_texto_info">
-                <p style="opacity: 0;" id="p" class="p_descricao">
-                    Rachao toda terça e quinta as 19 hrs <br><br>
-                    Zona Sul <br>
-                    R. Salvador Macarone - Jardim Paineiras, Diadema - SP, 09932-280 <br><br>
-                    Jogos disputados e com um nivel tecnico amador pra cima <br>
-                    Lugar com muitos jogadores e divertido <br>
+                <p style="opacity: 0" id="p" class="p_descricao">
+                    Rachao toda terça e quinta as 19 hrs <br /><br />
+                    Zona Sul <br />
+                    R. Salvador Macarone - Jardim Paineiras, Diadema - SP, 09932-280
+                    <br /><br />
+                    Jogos disputados e com um nivel tecnico amador pra cima <br />
+                    Lugar com muitos jogadores e divertido <br />
                 </p>
             </div>
         </div>
 
-        <div style="display: none;" id="trinta_zs" class="container_quadra2">
+        <div style="display: none" id="trinta_zs" class="container_quadra2">
             <div class="div_trinta" class="div_imagem">
-                <img class="img_in_container" id="trinta" src="imgs/31.JPG">
-                <span class="titulos" >Trinta e um</span>
+                <img class="img_in_container" id="trinta" src="imgs/31.JPG" />
+                <span class="titulos">Trinta e um</span>
                 <button onmouseenter="mostrar_texto_2()" onmouseleave="ocultar_texto_2()" class="btn_ver_quadra">
                     Ver informações
                 </button>
             </div>
             <div class="div_texto_info">
-                <p style="opacity: 0;" id="p_2" class="p_descricao">
-                    Rachao toda terça as 18 hrs <br><br>
-                    Zona Sul <br>
-                    Taboão, São Bernardo do Campo - State of São Paulo, 09661-020<br><br>
-                    Basicamente os jogos são 3 x 3, com um nivel bom sempre <br>
-                    Lugar com muitos jogadores e muitas amizades <br>
+                <p style="opacity: 0" id="p_2" class="p_descricao">
+                    Rachao toda terça as 18 hrs <br /><br />
+                    Zona Sul <br />
+                    Taboão, São Bernardo do Campo - State of São Paulo, 09661-020<br /><br />
+                    Basicamente os jogos são 3 x 3, com um nivel bom sempre <br />
+                    Lugar com muitos jogadores e muitas amizades <br />
                 </p>
             </div>
         </div>
 
-        <div style="display: none;" id="paco_zs" class="container_quadra3">
+        <div style="display: none" id="paco_zs" class="container_quadra3">
             <div class="div_trinta" class="div_imagem">
-                <img class="img_in_container" id="paco_diadema" src="imgs/paco_diadema.jpg">
+                <img class="img_in_container" id="paco_diadema" src="imgs/paco_diadema.jpg" />
                 <span class="titulos">Paço</span>
                 <button onmouseenter="mostrar_texto_3()" onmouseleave="ocultar_texto_3()" class="btn_ver_quadra">
                     Ver informações
                 </button>
             </div>
+
+
             <div class="div_texto_info">
-                <p style="opacity: 0;" id="p_3" class="p_descricao">
-                    Rachao todos os dias as 16/17 hrs <br><br>
-                    Zona Sul <br>
-                    Av. Antônio Piranga, 1380 - Centro, Diadema - SP, 09911-160<br><br>
-                    jogos 5 x 5 e 3 x 3, parque possui duas quadras uma para cada coisa <br>
-                    Lugar com muitos tipos jogadores, porém agradavel. <br>
+                <p style="opacity: 0" id="p_3" class="p_descricao">
+                    Rachao todos os dias as 16/17 hrs <br /><br />
+                    Zona Sul <br />
+                    Av. Antônio Piranga, 1380 - Centro, Diadema - SP, 09911-160<br /><br />
+                    jogos 5 x 5 e 3 x 3, parque possui duas quadras uma para cada coisa
+                    <br />
+                    Lugar com muitos tipos jogadores, porém agradavel. <br />
                 </p>
             </div>
         </div>
 
-
-
-
-
         <!--        ----------------------------------------CENTRO--------------------------------------------------------------     -->
 
-        <div style="display: none;" id="ibira_centro" class="container_quadra4">
+        <div style="display: none" id="ibira_centro" class="container_quadra4">
             <div class="div_trinta" class="div_imagem">
-                <img class="img_in_container" id="ibira" src="imgs/ibira.jpg">
+                <img class="img_in_container" id="ibira" src="imgs/ibira.jpg" />
                 <span class="titulos">Ibira</span>
                 <button onmouseenter="mostrar_texto_4()" onmouseleave="ocultar_texto_4()" class="btn_ver_quadra">
                     Ver informações
                 </button>
             </div>
             <div class="div_texto_info">
-                <p style="opacity: 0;" id="p_4" class="p_descricao">
-                    Rachao todos os dias, principalmente as 17 hrs e domingo o dia todo <br><br>
-                    Centro(Sul) <br>
-                    Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP, 04094-050 <br><br>
-                    O melhor lugar para quem busca aprender a jogar e para quem prefere um nivel técnico alto <br>
-                   
+                <p style="opacity: 0" id="p_4" class="p_descricao">
+                    Rachao todos os dias, principalmente as 17 hrs e domingo o dia todo
+                    <br /><br />
+                    Centro(Sul) <br />
+                    Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP, 04094-050
+                    <br /><br />
+                    O melhor lugar para quem busca aprender a jogar e para quem prefere
+                    um nivel técnico alto <br />
                 </p>
             </div>
         </div>
-    </div>
+        
 
-    <div style="display: none;" id="zilda_natel" class="container_quadra5">
+        <div style="display: none" id="zilda_centro" class="container_quadra5">
+            <div class="div_trinta" class="div_imagem">
+                <img class="img_in_container" id="zilda_img" src="imgs/zilda-natel-centro.jpg" />
+                <span class="titulos">Zilda Natel</span>
+                <button onmouseenter="mostrar_texto_5()" onmouseleave="ocultar_texto_5()" class="btn_ver_quadra">
+                    Ver informações
+                </button>
+            </div>
+            <div class="div_texto_info">
+                <p style="opacity: 0" id="p_5" class="p_descricao">
+                    É muito frequentado a noite. Seu horário de funcionamento é diário,
+                    das 9h às 21 horas. <br />
+                    O melhor? O parque também possui vestiário, além de emprestar bolas
+                    de basquete<br />
+                    Av. Dr. Arnaldo, 120 – Sumaré <br /><br />
+                </p>
+                </p>
+            </div>
+        </div>
+
+       
+
+        <div style="display: none" id="vila_buarque_centro" class="container_quadra6">
+            <div class="div_trinta" class="div_imagem">
+                <img class="img_in_container" id="vila_buarque" src="imgs/vila Buarque - SP.jpg" />
+                <span class="titulos">Vila Buarque - Magic Minas</span>
+                <button onmouseenter="mostrar_texto_6()" onmouseleave="ocultar_texto_6()" class="btn_ver_quadra">
+                    Ver informações
+                </button>
+            </div>
+            <div class="div_texto_info">
+                <p style="opacity: 0" id="p_6" class="p_descricao">
+                    É muito frequentado durante o dia. Seu horário de funcionamento é
+                    diário, das 9h às 21 horas. <br />
+                    <br />
+                    Quadra revitalizada pelo projeto Magic Minas e conta com projetos
+                    sociais, quadra recém revitalizada<br /><br />
+                    R. Maj. Sertório, 524 - Vila Buarque <br /><br />
+                </p>
+            </div>
+        </div>
+
+        <div style="display: none" id="bras_centro" class="container_quadra7">
         <div class="div_trinta" class="div_imagem">
-            <img class="img_in_container" id="ibira" src="imgs/zilda-natel-centro.jpg">
-            <span class="titulos">Zilda</span>
-            <button onmouseenter="mostrar_texto_5()" onmouseleave="ocultar_texto_5()" class="btn_ver_quadra">
+            <img class="img_in_container" id="bras_centro_img" src="imgs/quadra bras.jpeg" />
+            <span class="titulos">Parque Benemérito</span>
+            <button onmouseenter="mostrar_texto_7()" onmouseleave="ocultar_texto_7()" class="btn_ver_quadra">
                 Ver informações
             </button>
         </div>
         <div class="div_texto_info">
-            <p style="opacity: 0;" id="p_5" class="p_descricao">
-                É muito frequentado a noite. Seu horário de funcionamento é diário, das 9h às 21 horas. <br>
-                O melhor? O parque também possui vestiário, além de emprestar bolas de basquete<br>
-                Av. Dr. Arnaldo, 120 – Sumaré <br><br>
-
+            <p style="opacity: 0" id="p_7" class="p_descricao">
+                Parque pouco conhecido, funciona das 8 hrs ás 21/22 hrs <br />
+                <br />
+                Quadra revitalizada em 2019 e com alto nivel, homenagem á famosa AND1
+                <br /><br />
+                Parque Benemérito José Brás, Rua Piratininga, nº 365 – Brás, São Paulo-SP <br /><br />
             </p>
         </div>
+
+        </div>
+
     </div>
 
-    <!--        ----------------------------------------ZONA SUL--------------------------------------------------------------     -->
-
-
+    <!--        ----------------------------------------ZONA NORTE--------------------------------------------------------------     -->
 </body>
 
 </html>

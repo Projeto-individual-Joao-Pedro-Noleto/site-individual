@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bandeja  </title>
+    <title> Bandeja </title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
 </head>
+
 <body>
-     <!--  barra menu  -->
-        <div id="header">
-            <img class="img_bola_menu" src="imgs/basketball-player.png"> <h1>Bandeja</h1>
-            <ul class="navbar">
-                <li class="agora">
-                   <a href="" target="blank">Inicio</a>
-                </li>
-                    <li>
-                        <a target="blank">| </a>
-                    </li>
-                    <li>   
-                        <a href="#div_sobre_nos" target="blank">Sobre Nós</a>
-                    </li>
-                    <li>
-                        <a  target="blank">| </a>
-                   </li>
-                <li>   
-                    <a href="#div_sobre_mim" target="blank">Sobre Mim</a>
-                </li>
-                     <li>
-                         <a  target="blank">| </a>
-                    </li>
-                <li>
-                    <a href="login.html" target="blank">Quadras </a>
-                </li>
-                    <li>
-                        <a  target="blank">| </a>
-                    </li>
-                <li>
-                    <a href="login.html" target="blank">Login </a>
-                </li>
-                    <li>
-                        <a target="blank">| </a>
-                    </li>
-                <li><a href="cadastro.html" target="blank">Cadastro </a>
-                </li>
-            </ul>
+    <!--  barra menu  -->
+    <div id="header">
+        <img class="img_bola_menu" src="imgs/basketball-player.png">
+        <h1>Bandeja</h1>
+        <ul class="navbar">
+            <li class="agora">
+                <a href="" target="blank">Inicio</a>
+            </li>
+            <li>
+                <a target="blank">| </a>
+            </li>
+            <li>
+                <a href="#div_sobre_nos" target="blank">Sobre Nós</a>
+            </li>
+            <li>
+                <a target="blank">| </a>
+            </li>
+            <li>
+                <a href="#div_sobre_mim" target="blank">Sobre Mim</a>
+            </li>
+            <li>
+                <a target="blank">| </a>
+            </li>
+            <li>
+                <a href="login.html" target="blank">Quadras </a>
+            </li>
+            <li>
+                <a target="blank">| </a>
+            </li>
+            <li>
+                <a href="login.html" target="blank">Login </a>
+            </li>
+            <li>
+                <a target="blank">| </a>
+            </li>
+            <li><a href="cadastro.html" target="blank">Cadastro </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--  banner / inicio  -->
+    <div class="banner">
+        <img class="imagem_inicio" src="imgs/quadra no paço.jpg">
+        <div class="caixa_texto">
+            <p class="texto_incio">Somos um projeto que visa integrar "Rachões" de rua e jogadores apaixonados que
+                desejam jogar em novas quadras ou encontrar seu grupo de jogo ideal.
+            </p>
         </div>
-   
+    </div>
 
 
-        <!--  banner / inicio  -->
-        <div class="banner">
-                <img class="imagem_inicio" src="imgs/quadra no paço.jpg">
-                <div class="caixa_texto">
-                <p class="texto_incio">Somos um projeto que visa integrar  "Rachões" de rua e jogadores apaixonados que desejam jogar em novas quadras ou encontrar seu grupo de jogo ideal.                                      
+
+    <!--  Sobre nós  -->
+
+    <div id="div_sobre_nos" class="sobre_card">
+        <h1>Sobre Nós</h1>
+        <div class="container_sobre">
+
+            <div class="caixa_imagem_sobre_nos">
+                <img class="img_sobre_nos" src="imgs/jogadores.png">
+                <img style="margin-left: 35%;" class="img_sobre_nos" src="imgs/location.png">
+                <img style="margin-left: 75%;" class="img_sobre_nos" src="imgs/quadra.png">
+            </div>
+            <div class="caixa_texto_sobre_nos">
+                <p id="p_sobre_nos"> Somos um projeto que busca integrar quadras e pessoas apaixonadas pelo esporte,
+                    aqui você poderá encontrar novas quadras, ou até mesmo cadastrar a quadra que você costuma jogar .
                 </p>
             </div>
         </div>
 
-
-
-        <!--  Sobre nós  -->
-
-        <div id="div_sobre_nos" class="sobre_card">
-            <h1>Sobre Nós</h1>
-        <div class="container_sobre">
-
-            <div class="caixa_imagem_sobre_nos">
-                <img class="img_sobre_nos" src="imgs/jogadores.png" >
-                <img style="margin-left: 35%;" class="img_sobre_nos" src="imgs/location.png" >
-                <img style="margin-left: 75%;" class="img_sobre_nos"  src="imgs/quadra.png" >
-            </div>
-            <div class="caixa_texto_sobre_nos">
-               <p id="p_sobre_nos"> Somos um projeto que busca integrar quadras e pessoas apaixonadas pelo esporte, aqui você poderá encontrar novas quadras, ou até memso cadastrar a quadra que você costuma jogar .
-               </p>
-            </div>
-    </div>
-
-           <!--  Sobre mim -->
+        <!--  Sobre mim -->
 
         <div id="div_sobre_mim" class="sobre_card">
-                <h1>Sobre Mim</h1>
+            <h1>Sobre Mim</h1>
             <div class="container_sobre">
                 <div class="caixa_imagem_sobre_mim">
                     <video autoplay muted loop id="meu_video">
@@ -92,17 +97,22 @@
                         <source src="imgs/cesta zona morta.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div  class="caixa_texto_sobre_mim">
-                   <p id="p_sobre_mim"> Assim como vocês eu sou um apaixonado pelo basquetebol e sempre joguei os famosos "Rachões", atualmente participo dos jogos na quadra "31" que também estara listada aqui no site, tive a ideia de construir esse site, baseado em experiências pessoais, já que quando eu começei a jogar foi muito difícil encontrar uma quadra onde as pessoas tinham grupos e uma certa organização de jogos, com o tempo conheci algumas pessoas no esporte, fiz amigos e encontrei um grupo ideal.
-                   </p>
-            
+                <div class="caixa_texto_sobre_mim">
+                    <p id="p_sobre_mim"> Assim como vocês eu sou um apaixonado pelo basquetebol e sempre joguei os
+                        famosos "Rachões", atualmente participo dos jogos na quadra "31" que também estara listada aqui
+                        no site, tive a ideia de construir esse site, baseado em experiências pessoais, já que quando eu
+                        começei a jogar foi muito difícil encontrar uma quadra onde as pessoas tinham grupos e uma certa
+                        organização de jogos, com o tempo conheci algumas pessoas no esporte, fiz amigos e encontrei um
+                        grupo ideal.
+                    </p>
+
                 </div>
-             
+
+
+            </div>
 
         </div>
 
-        </div>
-        
 
         <!-- footer-->
         <div class="footer">
@@ -110,6 +120,7 @@
                 <h4>Feito com amor por um aluno BandTec &copy; 2021</h4>
             </div>
         </div>
-        
+
 </body>
+
 </html>
