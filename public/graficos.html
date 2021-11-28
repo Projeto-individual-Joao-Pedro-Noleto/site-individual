@@ -8,9 +8,118 @@
     <title>Analise</title>
     <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/analise.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script> function listar_zona_zn() {
+        fetch("/usuarios/grafico_zona_zn").then(function (resposta) {
+            console.log("ESTOU NO THEN DO listar_zona_zn()!")
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos da zona ", JSON.stringify(resposta));
+
+                    zona_zn= resposta[resposta.indexOf(':') + 1]//não sei pq mas isso funciona
+                    console.log(zona_zn.jogadores_zn);
+                    sessionStorage.JOGADOR_ZN= zona_zn.jogadores_zn;
+
+                });
+            } else {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+            }
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+        return false;
+    }
+
+    
+
+    function listar_zona_zs() {
+        fetch("/usuarios/grafico_zona_zs").then(function (resposta) {
+            console.log("ESTOU NO THEN DO listar_zona_zs()!")
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos da zona zs ", JSON.stringify(resposta));
+
+                    zona_zs= resposta[resposta.indexOf(':') + 1]//não sei pq mas isso funciona
+                    console.log(zona_zs.jogadores_zs);
+                    sessionStorage.JOGADOR_ZS= zona_zs.jogadores_zs;
+
+                });
+            } else {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+            }
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+        return false;
+    }
+
+    function listar_zona_zl() {
+        fetch("/usuarios/grafico_zona_zl").then(function (resposta) {
+            console.log("ESTOU NO THEN DO listar_zona_zs()!")
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos da zona zs ", JSON.stringify(resposta));
+
+                    zona_zl= resposta[resposta.indexOf(':') + 1]//não sei pq mas isso funciona
+                    console.log(zona_zl.jogadores_zl);
+                    sessionStorage.JOGADOR_ZL= zona_zl.jogadores_zl;
+
+                });
+            } else {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+            }
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+        return false;
+    }
+
+    function listar_zona_zo() {
+        fetch("/usuarios/grafico_zona_zo").then(function (resposta) {
+            console.log("ESTOU NO THEN DO listar_zona_zo()!")
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos da zona zo ", JSON.stringify(resposta));
+
+                    zona_zo= resposta[resposta.indexOf(':') + 1]//não sei pq mas isso funciona
+                    console.log(zona_zo.jogadores_zo);
+                    sessionStorage.JOGADOR_ZO= zona_zo.jogadores_zo;
+
+                });
+            } else {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+            }
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+        return false;
+    }
+
+    function listar_zona_zc() {
+        fetch("/usuarios/grafico_zona_zc").then(function (resposta) {
+            console.log("ESTOU NO THEN DO listar_zona_centro()!")
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos da zona centro ", JSON.stringify(resposta));
+
+                    zona_centro= resposta[resposta.indexOf(':') + 1]//não sei pq mas isso funciona
+                    console.log(zona_centro.jogadores_zc);
+                    sessionStorage.JOGADOR_ZC= zona_centro.jogadores_zc;
+
+                });
+            } else {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+            }
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+        return false;
+    }
+   
+</script>
 </head>
 
-<body>
+<body onload="listar_zona_zn(), listar_zona_zs() , listar_zona_zl() , listar_zona_zo() , listar_zona_zc()">
     <div id="header">
         <img class="img_bola_menu" src="imgs/basketball-player.png">
         <h1>Bandeja</h1>
@@ -22,10 +131,64 @@
                 <a target="blank">| </a>
             </li>
             <li>
-                <a href="quadras_zona.html" target="blank">Quadras </a>
-            </li>
+                <a href="quadras.html" target="blank">Quadras </a>
+           
         </ul>
     </div>
+
+
+    <div class="fundo">
+      
+            <!-- Gráficos -->
+            <div class="graph">
+              <canvas id="myChart" style="width: 100%; height: 100%"></canvas>
+            </div>
+      
+          </div>
+
+
 </body>
 
 </html>
+
+<script>
+    // Inicia uma variável do tipo constante (não pode ser reatribuida)
+    const config = { 
+      type: "doughnut", // tipo do gráfico
+      data: { // objeto que vai conter os dados do gráfico
+        labels: ["Zona sul", "Zona Leste", "Zona Norte", "Zona Oeste", "Zona Centro"], // labels (rótulos) que serão identificados os nossos dados 
+        datasets: [ // datasets (conjunto de dados)
+          {
+            label: "Jogadores por região",
+          data: [Number(sessionStorage.JOGADOR_ZS)/*sul*/,Number(sessionStorage.JOGADOR_ZL)/*leste*/,Number(sessionStorage.JOGADOR_ZN),Number(sessionStorage.JOGADOR_ZO)/*oeste*/,Number(sessionStorage.JOGADOR_ZC)/*centro*/],
+          backgroundColor: ["#DF4AC4","#D6711C","#347EA2","#52D69C","#7D3C89"],
+          borderColor: "#2B2C2D"
+          }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false ,
+        plugins: {
+                legend: {
+                    position: 'left',
+                },
+                title: {
+                    display: true,
+                    text: 'Jogadores por zona',
+                    color: '#f5f5f5'
+        /* maintainAspectRatio (manter relação de aspecto) 
+          caso true: ele "obdece" a altura e largura que colocamos
+          caso false: ele não "obdece" a altura e largura que colocamos e se ajusta ao componente pai
+        */
+      }
+    }
+    
+    }
+}
+    var myChartLine = new Chart(document.getElementById("myChart"), config); 
+    /* aqui obrigatoriamente tem que colocar new Chart() para criar um novo chart 
+    e passar dentro dos (parênteses) o elemento canvas que você quer mandar e 
+    separado pela virgula o que você quer mandar, no nosso caso a config que fizemos 
+    */
+   
+  </script>

@@ -12,7 +12,7 @@
     <script src="js/main.js"></script>
 </head>
 
-<body onload="validarsessao()">
+<body id="tamanho_body" onload="validarsessao()">
     <div id="header">
         <img class="img_bola_menu" src="imgs/basketball-court.png" />
         <h1>Bandeja</h1>
@@ -41,11 +41,17 @@
         </ul>
     </div>
     <br />
-    <h1 id="h1_ola" class="h1_boas_vindas">
-        Olá <span id="nome_usuario_h1"> </span>
-    </h1>
+   
+    <div id="bem_vindo" class="bem_vindo_h1">
+        <h1 id="h1_ola" class="h1_boas_vindas">
+            Olá <span id="nome_usuario_h1"> </span>
+            <br> <span id="espacamento_1">escolha a zona </span> 
+            <br>  <span id="espacamento_2">que prefere jogar </span>
+        </h1>
+            </div>
 
-    <div id="botoes" class="container_btns">
+    <div  id="botoes" class="container_btns">
+    
         <span onclick="zona_sul_quadras()" class="btn_link" id="btn_zs">
             Sul
         </span>
@@ -54,10 +60,12 @@
         <span onclick="zona_oeste_quadras()" class="btn_link" id="btn_zo">Zona Oeste</span>
         <span onclick="zona_centro_quadras()" class="btn_link" id="btn_centro" target="blank">Zona Centro</span>
     </div>
-
+    <div id="botoes_2" class="container_btns">
+           <a id="btn_centro" class="btn_link" href="graficos.html"> Gráfico </a>
+    </div>
     <!--                      ----------------------ZONA SUL--------------------------------------------------------------     -->
 
-    <div class="div_quadras">
+    <div id="tela_quadra" style="display: none;" class="div_quadras">
         <div style="display: none" id="kaleman_zs" class="container_quadra1">
             <div class="div_kaleman" class="div_imagem">
                 <img class="img_in_container" id="img_kaleman"
@@ -106,8 +114,6 @@
                     Ver informações
                 </button>
             </div>
-
-
             <div class="div_texto_info">
                 <p style="opacity: 0" id="p_3" class="p_descricao">
                     Rachao todos os dias as 16/17 hrs <br /><br />
@@ -116,6 +122,25 @@
                     jogos 5 x 5 e 3 x 3, parque possui duas quadras uma para cada coisa
                     <br />
                     Lugar com muitos tipos jogadores, porém agradavel. <br />
+                </p>
+            </div>
+        </div>
+
+        <div style="display: none" id="uniao_zs" class="container_quadra8">
+            <div class="div_trinta" class="div_imagem">
+                <img class="img_in_container" id="uniao" src="imgs/quadra_uniao_zona_sul.jpeg" />
+                <span class="titulos">Quadra do uniao</span>
+                <button onmouseenter="mostrar_texto_8()" onmouseleave="ocultar_texto_8()" class="btn_ver_quadra">
+                    Ver informações
+                </button>
+            </div>
+            <div class="div_texto_info">
+                <p style="opacity: 0" id="p_8" class="p_descricao">
+                    Rachao toda quarta as 18 hrs <br /><br />
+                    Zona Sul <br />
+                    Jardim União – Afonso Monteiro da Cruz - Serraria, Diadema - SP, 09980-550<br/><br />
+                    Primeira quadra reformada pelo grupo OnfireBasquete, com todos os tipos de jogadores <br />
+                    Lugar com muitos jogadores e um bom nível de jogo<br />
                 </p>
             </div>
         </div>
@@ -206,9 +231,223 @@
 
         </div>
 
-    </div>
+
 
     <!--        ----------------------------------------ZONA NORTE--------------------------------------------------------------     -->
+    <div style="display: none" id="jardim_zn" class="container_quadra9">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/jardim-zona-norte.jpg" />
+            <span class="titulos">Jardim Felicidade</span>
+            <button onmouseenter="mostrar_texto_9()" onmouseleave="ocultar_texto_9()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_9" class="p_descricao">
+                É muito frequentado durante o dia. Seu horário de funcionamento é
+                diário, das 7h às 18 horas.. <br />
+                <br />
+                Quadra com bastante movimento e com outros esportes a serem praticados
+                a quadra oferece aulas todos os domingos, das 15 às 16 horas<br /><br />
+                R. Laudelino Viêira de Campos, 265 - Jardim Felicidade<br /><br />
+            </p>
+        </div>
+    </div>
+
+    <div style="display: none" id="lions_zn" class="container_quadra10">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/parque_lions_clube_zn.jpg" />
+            <span class="titulos">Parque Lions clube</span>
+            <button onmouseenter="mostrar_texto_10()" onmouseleave="ocultar_texto_10()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_10" class="p_descricao">
+                É muito frequentado durante o dia. Seu horário de funcionamento é
+                diário, das 6h às 18 horas.. <br />
+                <br />
+                Quadra com bastante movimento e com outros esportes a serem praticados
+                Quadra com uma boa infraestrutura e bons jogadores <br /><br />
+                R. Alcindo Bueno de Assis, 500 - Tucuruvi, São Paulo - SP, 02344-080<br /><br />
+            </p>
+        </div>
+    </div>
+
+
+    
+    <div style="display: none" id="jacinto_zn" class="container_quadra13">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/parque jacinto.PNG" />
+            <span class="titulos">Parque Jacinto</span>
+            <button onmouseenter="mostrar_texto_13()" onmouseleave="ocultar_texto_13()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_13" class="p_descricao">
+                Parque mais conhecido pelas pessoas do bairro. Seu horário de funcionamento é
+                diário, das 5h às 17 horas.. <br />
+                <br />
+                Quadra bem cuidada e com bons aros
+                Um bom lugar para criar um novo grupo de jogo e treino <br /><br />
+                R. Talófitos, 16 - Jardim Cidade Pirituba, São Paulo - SP, 02945-170 <br /><br />
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    <div style="display: none" id="juventude_zn" class="container_quadra12">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/parque da juventude.jpg" />
+            <span class="titulos">Parque da Juventude </span>
+            <button onmouseenter="mostrar_texto_12()" onmouseleave="ocultar_texto_12()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_12" class="p_descricao">
+                É muito frequentado durante o dia (especifico as 16 hrs). Seu horário de funcionamento é
+                diário, das 6h às 18 horas.. <br />
+                <br />
+                Quadra com uma boa infraestrutura e muitas pessoas
+                Quadra bem cuidada pelos jogadores <br /><br />
+                Av. Cruzeiro do Sul, 2630 - Carandiru, São Paulo - SP, 02030-100 <br /><br />
+            </p>
+        </div>
+    </div>
+
+      <!--        ----------------------------------------ZONA LESTE--------------------------------------------------------------     -->
+
+    
+      <div style="display: none" id="tiquatira_zn" class="container_quadra11">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/quadra_tiquatira.PNG" />
+            <span class="titulos">Quadra tiquatira</span>
+            <button onmouseenter="mostrar_texto_11()" onmouseleave="ocultar_texto_11()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_11" class="p_descricao">
+                É muito frequentado durante o dia. Seu horário de funcionamento é
+                diário, das 6h às 18 horas.. <br />
+                <br />
+                Quadra com um grupo que se encontra todos os finais de semana
+                Quadra bem cuidada pelos jogadores <br /><br />
+                (Av. Governador Carvalho Pinho, 879-911 - Vila São Geraldo) <br /><br />
+            </p>
+        </div>
+    </div>
+
+    <div style="display: none" id="ceret_zl" class="container_quadra14">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/parque-ceret-quadra.jpeg" />
+            <span class="titulos">Quadra Ceret</span>
+            <button onmouseenter="mostrar_texto_14()" onmouseleave="ocultar_texto_14()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_14" class="p_descricao">
+                É muito frequentado durante o dia. Seu horário de funcionamento é
+                diário, das 6h às 19 horas.. <br />
+                <br />
+                Quadra com um grupo que se encontra todos os finais de semana
+                Quadra bem cuidada pelos jogadores e com um bom nível <br /><br />
+                R. Canuto Abreu, s/n - Jardim Analia Franco, São Paulo - SP, 03336-060 <br /><br />
+            </p>
+        </div>
+    </div>
+
+
+    
+    <div style="display: none" id="ciencia_zl" class="container_quadra15">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/parque_ciencia.jpg" />
+            <span class="titulos">Parque Ciência</span>
+            <button onmouseenter="mostrar_texto_15()" onmouseleave="ocultar_texto_15()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_15" class="p_descricao">
+                É muito frequentado durante o dia. Seu horário de funcionamento é
+                diário, das 6h às 17 horas.. <br />
+                <br />
+                Quadra com um bom nível técnico 
+                Quadra bem cuidada e com uma boa infraestrutura <br /><br />
+                R. Ernestina Lesina, 255 - Cidade Tiradentes, São Paulo - SP, 08470-260 <br /><br />
+            </p>
+        </div>
+    </div>
+
+    <div style="display: none" id="raul_zl" class="container_quadra16">
+        <div class="div_trinta" class="div_imagem">
+            <img class="img_in_container" id="zona_norte" src="imgs/raul_seixas_sl.jpg" />
+            <span class="titulos">Raul Park</span>
+            <button onmouseenter="mostrar_texto_16()" onmouseleave="ocultar_texto_16()" class="btn_ver_quadra">
+                Ver informações
+            </button>
+        </div>
+        <div class="div_texto_info">
+            <p style="opacity: 0" id="p_16" class="p_descricao">
+                É muito frequentado durante o dia. Seu horário de funcionamento é
+                diário, das 6h às 18 horas.. <br />
+                <br />
+                Quadra com bastante jogadores
+                Quadras necessitam de reformas, mas ainda é possível jogar <br /><br />
+                R. Murmúrios da Tarde, 211 - Jose Bonifacio, São Paulo - SP, 08253-580 <br /><br />
+            </p>
+        </div>
+    </div>
+
+  <!--        ----------------------------------------OESTE--------------------------------------------------------------     -->
+
+
+  <div style="display: none" id="villa_zo" class="container_quadra17">
+    <div class="div_trinta" class="div_imagem">
+        <img class="img_in_container" id="zona_norte" src="imgs/villa-lobos-zona-oeste.jpg" />
+        <span class="titulos">Parque Villa Lobos</span>
+        <button onmouseenter="mostrar_texto_17()" onmouseleave="ocultar_texto_17()" class="btn_ver_quadra">
+            Ver informações
+        </button>
+    </div>
+    <div class="div_texto_info">
+        <p style="opacity: 0" id="p_17" class="p_descricao">
+            É muito frequentado durante o dia. Seu horário de funcionamento é
+            diário, das 5:30 h às 19 horas.. <br />
+            <br />
+            Quadras com bastante jogadores e rotatividade 
+            Quadras com uma boa infraestrutura e bons jogadores <br /><br />
+            Av. Prof. Fonseca Rodrigues, 1901-1945 - Alto de Pinheiros, São Paulo - SP, 05461-010 <br /><br />
+        </p>
+    </div>
+</div>
+
+<div style="display: none" id="candido_zo" class="container_quadra18">
+    <div class="div_trinta" class="div_imagem">
+        <img class="img_in_container" id="zona_oeste" src="imgs/parque candido portinari zona-oeste.jpg" />
+        <span class="titulos">Parque Cândido Portinari </span>
+        <button onmouseenter="mostrar_texto_18()" onmouseleave="ocultar_texto_18()" class="btn_ver_quadra">
+            Ver informações
+        </button>
+    </div>
+    <div class="div_texto_info">
+        <p style="opacity: 0" id="p_18" class="p_descricao">
+            É muito frequentado durante o dia. Seu horário de funcionamento é
+            diário, das 5:30 h às 20 horas.. <br />
+            <br />
+            Quadras muitos jogadores e um bom nível
+            Quadras poliesportivas e bem cuidadas <br /><br />
+            Av. Queiroz Filho, 1365 - Vila Hamburguesa, São Paulo - SP, 03178-200 <br /><br />
+        </p>
+    </div>
+</div>
+
+</div>
 </body>
 
 </html>

@@ -24,7 +24,7 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #434343;
-  width: 200vw;
+  width: 100vw;
   height: 110vh;
   position: absolute;
 }
@@ -241,6 +241,194 @@ button:hover {
       rgba(240, 101, 46, 0.05) 25px 25px;
      
   }
+
+  .container_quadra8 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra9 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+  
+  .container_quadra10 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra11 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra12 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra13 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra14 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra15 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra16 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra17 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+  .container_quadra18 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
 .div_trinta {
   width: 350px;
   height: 75%;
@@ -265,20 +453,41 @@ button:hover {
   border-radius: 25px;
 }
 
+
+
 /*  Parte escolha da zona*/
 
-.h1_boas_vindas {
-  color: #f8f0f0;
-  position: absolute;
-  width: 50%;
-  height: 40%;
+.bem_vindo_h1{
+  height: 20%;
+  width: 100%;
+  margin-top: 5.5%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
+.h1_boas_vindas #espacamento_1{
+  margin-left: 15%;
+  color: #108dc7;
+}
+
+.h1_boas_vindas #espacamento_2{
+  margin-left: 25%;
+ 
+}
+
+
+.h1_boas_vindas {
+  color: #f8f0f0;
+  width: 75%;
+  margin-left: 28%;
+  font-style: normal;
+  font-weight: 200;
+}
+
 .container_btns {
-  width: 50%;
-  height: 75%;
+  width: 100%;
+  height: 15%;
   display: flex;
   justify-content: space-around;
   align-items: center;
