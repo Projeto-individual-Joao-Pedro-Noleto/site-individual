@@ -206,15 +206,27 @@ function ocultar_texto_17() {
 }
 
 function mostrar_texto_18() {
-    var texto = p_17.value;
+    var texto = p_18.value;
 
     p_18.style.opacity = '1';
 }
 
 function ocultar_texto_18() {
-    var texto = p_17.value;
+    var texto = p_18.value;
 
     p_18.style.opacity = '0';
+}
+
+function mostrar_texto_19() {
+    var texto = p_19.value;
+
+    p_19.style.opacity = '1';
+}
+
+function ocultar_texto_19() {
+    var texto = p_19.value;
+
+    p_19.style.opacity = '0';
 }
 
 /* quadras */
@@ -312,6 +324,7 @@ function zona_leste_quadras() {
 function zona_oeste_quadras() {
     var villa = villa_zo;
     var candido = candido_zo;
+    var chuvisco = chuvisco_zo;
     var sessao_quadra = tela_quadra;
 
     h1_ola.style.display = 'none';
@@ -324,6 +337,7 @@ function zona_oeste_quadras() {
 
     candido.style.display = 'flex';
     villa.style.display = 'flex';
+    chuvisco.style.display = 'flex';
 }
 
 /* Pegar dados do banco */

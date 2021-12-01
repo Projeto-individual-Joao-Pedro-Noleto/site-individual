@@ -429,6 +429,24 @@ button:hover {
      
   }
 
+  .container_quadra19 {
+    display: flex;
+    height: 75%;
+    width: 18%;
+    border: 5px #f37335 outset;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 5%;
+    box-shadow: rgba(240, 101, 46, 0.4) 5px 5px, rgba(240, 101, 46, 0.3) 10px 10px,
+      rgba(240, 101, 46, 0.2) 15px 15px, rgba(240, 101, 46, 0.1) 20px 20px,
+      rgba(240, 101, 46, 0.05) 25px 25px;
+     
+  }
+
+
 .div_trinta {
   width: 350px;
   height: 75%;
