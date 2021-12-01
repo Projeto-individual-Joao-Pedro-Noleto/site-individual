@@ -17,12 +17,12 @@
         <source src="imgs/animação_Trim.mp4" type="video/mp4">
     </video>
     <div class="div_cadastro">
-        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+        <form id="form_cadastro_quadra" method="post" onsubmit="return cadastrar_quadra()">
             <div class="div_form">
                 <h1>Cadastro Quadra</h1>
                 <div class="div_inputs_um">
                     <input name="nome_quadra" type="text" id="input_usuario" placeholder="Nome Quadra">
-                    <span>Zona que a quadra é localizada: <select name="zona" id="regiao">
+                    <span>Zona que a quadra é localizada: <select name="zona_quadra" id="regiao">
                             <option value="">-</option>
                             <option value="ZS">Zona Sul</option>
                             <option value="ZN">Zona Norte</option>
@@ -30,11 +30,13 @@
                             <option value="ZO">Zona Oeste</option>
                             <option value="Centro">Centro</option>
                         </select></span>
+
                 </div>
                 <div class="div_inputs_dois">
                     
-                    <input name="endereco" type="text" id="input_usuario" placeholder="Endereço">
-                    <input name="comentario" type="text" id="input_comentario" placeholder="Comentario sobre quadra">
+                    <input name="endereco" type="text" id="input_endereco" placeholder="Endereço">
+                    <textarea rows="5" name="comentario" type="text" id="input_comentario" placeholder="Comentario sobre quadra"></textarea>
+                    <input style="display: none;" name="session_id" id="usuario">
 
                 </div>
                 <button class="btn_cadastro" type="submit">Cadastrar</button>
@@ -50,65 +52,67 @@
 
 <script>
 
+  usuario.value = sessionStorage.ID_USUARIO;
+
     function cadastrar_quadra() {
 
-
-        var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
+        
+        var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro_quadra")));
 
         var nome = formulario.get("nome_quadra");
         var endereco = formulario.get("endereco");
         var comentario = formulario.get("comentario");
-        var zona = formulario.get("zona");
+        var zona = formulario.get("zona_quadra");
+        var idUsuario = formulario.get("session_id");
 
-        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
-        if (nome_quadra == "" || endereco == "" || comentario == "" || zona == "") {
+        
+     if (input_usuario.value == "" || input_endereco.value == "" || comentario.value == "" || regiao.value == "") {
 
-            window.alert("Preencha todos os campos para prosseguir!");
-            if (nome == "") {
-                console.log('nome está em branco')
-            }
-            if (endereco == "") {
-                console.log('email está em branco')
-            }
+         window.alert("Preencha todos os campos para prosseguir!");
+         
+         if (input_usuario.value == "") {
+             alert('nome está em branco')
+         }
+         if (input_endereco.value == "") {
+             alert('endereço está em branco')
+         }
 
-            if (comentario == "") {
-                console.log('comentario sobre quadra está em branco')
-            }
+         if (comentario.value == "") {
+             console.log('comentario sobre quadra está em branco')
+         }
             
-            if (zona == "") {
-                console.log('zona está em branco')
-            }
-            return false;
-        }
+         if (regiao.value == "") {
+             console.log('zona está em branco')
+         }
+         
+          return false;
+     
+     }
+      else{
+      
 
-        if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
-            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+         fetch("/usuarios/cadastrar_quadra", {
+             method: "POST",
+             body: formulario
+         }).then(function (resposta) {
 
-            return false;
-        }
+             console.log("resposta: ", resposta);
 
-
-        fetch("/usuarios/cadastrar", {
-            method: "POST",
-            body: formulario
-        }).then(function (resposta) {
-
-            console.log("resposta: ", resposta);
-
-            if (resposta.ok) {
-                window.alert("Cadastro realizado com sucesso!");
-                window.location = "./login.html";
+             if (resposta.ok) {
+                 window.alert("Cadastro realizado com sucesso!");
+                 window.location = "./quadras.html";
 
 
-            } else {
-                throw ("Houve um erro ao tentar realizar o cadastro!");
-            }
-        }).catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
+             } else {
+                 throw ("Houve um erro ao tentar realizar o cadastro!");
+             }
+         }).catch(function (resposta) {
+             console.log(`#ERRO: ${resposta}`);
 
-        });
+         });
 
-        return false;
+         return false;
     }
+}
 
 </script>
