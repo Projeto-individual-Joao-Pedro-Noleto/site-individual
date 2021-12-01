@@ -27,6 +27,15 @@ function cadastrar(nome, email, senha, telefone, zona) {
     return database.executar(instrucao);
 }
 
+function cadastrar_quadra(nome_quadra,zona_quadra,endereco,comentario,idUsuario) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome_quadra, zona_quadra , endereco, comentario , idUsuario);
+    var instrucao = `
+        INSERT INTO cadastro_quadra(nome_quadra, zona_quadra , endereco, comentario , fkUsuario) VALUES ('${nome_quadra}', '${zona_quadra}', '${endereco}','${comentario}','${idUsuario}');
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 function listar_zona_zn(){
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
     var instrucao = `
@@ -68,7 +77,7 @@ function listar_zona_zo(){
 function listar_zona_zc(){
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
     var instrucao = `
-    SELECT count(zona) as jogadores_zc FROM usuario where zona = "CENTRo" ;
+    SELECT count(zona) as jogadores_zc FROM usuario where zona = "CENTRO" ;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
@@ -77,6 +86,7 @@ function listar_zona_zc(){
 module.exports = {
     entrar,
     cadastrar,
+    cadastrar_quadra,
     listar_zona_zn,
     listar_zona_zs,
     listar_zona_zl,
