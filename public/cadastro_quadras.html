@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" href="imgs/icone_bola.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/cadastro_quadra.css">
+ 
    
 </head>
 
@@ -35,7 +36,7 @@
                 <div class="div_inputs_dois">
                     
                     <input name="endereco" type="text" id="input_endereco" placeholder="Endereço">
-                    <textarea rows="5" name="comentario" type="text" id="input_comentario" placeholder="Comentario sobre quadra"></textarea>
+                    <textarea onclick="alerta_comentario()" rows="5" name="comentario" type="text" id="input_comentario" placeholder="Comentario sobre quadra"></textarea>
                     <input style="display: none;" name="session_id" id="usuario">
 
                 </div>
@@ -113,6 +114,11 @@
 
          return false;
     }
+}
+
+function alerta_comentario(){
+
+alert("Fale um pouco sobre a dinâmica da quadra, se há jogadores frequentes e como está a infraestrutura")
 }
 
 </script>

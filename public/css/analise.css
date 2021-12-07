@@ -91,13 +91,22 @@ body{
 } 
 
 
+.titulo{
+  width: 70%;
+  height: 13%;
+  display: flex;
+  margin-bottom: 2.5%;
+  color: #f8f0f0;
+  margin-top: 2.5%;
+}
+
 /*                  Grafico                                */
 
 .fundo{
     width: 100%;
     height: 100%;
     display: flex;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

@@ -1,6 +1,9 @@
 
 /* Função msotrar texto */
 
+
+
+
 function mostrar_texto() {
     var texto = p.value;
 
@@ -335,9 +338,11 @@ function zona_oeste_quadras() {
     tamanho_body.style.width = '200vw';
     sessao_quadra.style.display = 'flex';
 
+    
     candido.style.display = 'flex';
     villa.style.display = 'flex';
     chuvisco.style.display = 'flex';
+    
 }
 
 /* Pegar dados do banco */
@@ -351,3 +356,4 @@ function validarsessao() {
         window.location = '../login.html';
     }
 }
+

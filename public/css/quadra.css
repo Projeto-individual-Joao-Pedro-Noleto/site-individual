@@ -485,12 +485,12 @@ button:hover {
 }
 
 .h1_boas_vindas #espacamento_1{
-  margin-left: 15%;
+  margin-left: 12.5%;
   color: #108dc7;
 }
 
 .h1_boas_vindas #espacamento_2{
-  margin-left: 25%;
+  margin-left: 29%;
  
 }
 
@@ -498,7 +498,7 @@ button:hover {
 .h1_boas_vindas {
   color: #f8f0f0;
   width: 75%;
-  margin-left: 28%;
+  margin-left: 27%;
   font-style: normal;
   font-weight: 200;
 }
